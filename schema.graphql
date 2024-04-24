@@ -1,0 +1,105 @@
+type Query {
+    test: String
+    header: Header,
+    footer: Footer
+    homepage: Homepage
+    about_us: AboutUs
+    plan: Plan
+    contact_us: ContactUs
+    my_account: MyAccount
+        
+
+    }
+
+type Homepage {
+    hero_section_title: String
+    hero_section_desc: String
+    hero_section_first_btn: String
+    hero_section_second_btn: String
+    hero_section_image: String
+    fitness_programs_section_title: String
+    fitness_programs_section_desc: String
+    fitness_programs_section_cards: [FitnessProgram]
+    success_stories_section_title: String
+    success_stories_section_desc: String
+    success_stories_section_cards: [SuccessStories]
+    }
+
+type FitnessProgram {
+    program_id: Int
+    program_title: String
+    program_desc: String
+}
+
+type SuccessStories {
+    card_id: Int
+    user_avatar_img: String
+    user_review: String
+    user_name: String
+    user_role: String
+}
+
+
+type AboutUs {
+    hero_section_image: String
+    hero_section_title: String
+    hero_section_desc: String
+    our_team_members_card: [Members]
+    }
+
+type Members {
+    member_avatar_image: String
+    member_name: String
+    member_role: String
+}
+
+type Plan {
+    hero_section_image: String
+    hero_section_title: String
+    hero_section_desc: String
+    plan_first_btn: String
+    plan_second_btn: String
+    plan_cards: [PlanCards]
+    }
+
+type PlanCards {
+    plan_name: String
+    plan_price: String
+    plan_highlights: [String]
+    plan_button_value: String
+}
+
+
+
+type ContactUs {
+    feedback_form_title: String
+    feedback_form_desc: String
+    button_value: String
+    site_map_view: String
+}
+
+type MyAccount {
+    custom_icons: CustomIcons
+    user_image_avatar: String
+}
+
+type CustomIcons {
+    name: String
+    email: String
+    contact_number: String
+    company: String
+    plan: String
+    points: String
+}
+
+
+type Header {
+    brand_logo: String
+    site_name: String
+},
+
+type Footer {
+    brand_logo: String
+    site_name: String
+    at_symbol: String
+},
