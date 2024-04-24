@@ -4,7 +4,7 @@ This project is based on the Gym Fitness using React, Redux, GraphQL and Tailwin
 
 
 ## Run Command
-After cloning the repo, first type command - `npm i`. After that, type command - `npm run dev`.
+After cloning the repo, first type command - `npm i`. After that, type command - `npm start`.
 
 ## Requirements
 Before cloning the repo, make sure you have the latest Node version installed in your system
